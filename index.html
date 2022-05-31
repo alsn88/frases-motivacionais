@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Javascript -->
+
+      <script type="text/javascript">
+
+      function gerarFrase(){
+    
+        const frases = [
+          "Motivação é a arte de fazer as pessoas fazerem o que você quer que elas façam porque elas o querem fazer. ''Dwight Eisenhower''",
+          "Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre.",
+          "Eu faço da dificuldade a minha motivação. A volta por cima vem na continuação. ''Charlie Brown Jr''",
+          "Pedras no caminho? Eu guardo todas. Um dia vou construir um castelo. ''Nemo Nox''",
+          "É parte da cura o desejo de ser curado. ''Sêneca''",
+          "Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado. ''Roberto Shinyashiki''",
+          "O que me preocupa não é o grito dos maus. É o silêncio dos bons. ''Martin Luther King''",
+          "Imagine uma nova história para sua vida e acredite nela. ''Paulo Coelho''",
+          "O insucesso é apenas uma oportunidade para recomeçar com mais inteligência. ''Henry Ford''",
+        ]
+
+        const numeroAleatorio = Math.floor(Math.random() * 9)
+        const frase = frases [numeroAleatorio]
+
+        document.getElementById('frase').innerHTML = frase
+        } 
+
+        </script>
+
+    <title>Frases motivacionais</title>
+
+  </head>
+
+  <body>
+    
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron">
+              <h1 class="text-success display-5">Frases motivacionais</h1>
+              <hr>
+              <h2 class="display-4" id="frase">
+                Em busca do ótimo não se faz o bom.
+              </h2>
+              <hr>
+              <button type="button" class="btn btn-success btn-lg" onclick="gerarFrase ()">Nova frase</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
